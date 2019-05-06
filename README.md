@@ -19,9 +19,9 @@ Android:
 
 - Store encrypted using asymmetric keys (SMSPKI)**
 
-* hackable on Rooted device, however gets harder with newer Androids
+- * hackable on Rooted device, however gets harder with newer Androids
 
-** very secure (accepting the SMS spoof risk), but also complex to integrate and setup. As a disadv. SMS costs also money.
+- ** very secure (accepting the SMS spoof risk), but also complex to integrate and setup. As a disadv. SMS costs also money.
 
 
 
