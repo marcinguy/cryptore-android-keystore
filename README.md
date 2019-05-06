@@ -8,30 +8,37 @@ Cryptore
 More info
 ====
 
+Information at rest secure storage:
+
 Android:
-Store in cleartext
-Store encrypted using a symmetric key
-Using the Android Keystore (symmetric, asymmetric based on version)*
-Store encrypted using asymmetric keys (SMSPKI)**
+- Store in cleartext
+
+- Store encrypted using a symmetric key
+
+- Using the Android Keystore (symmetric, asymmetric based on version)*
+
+- Store encrypted using asymmetric keys (SMSPKI)**
 
 *  hackable on Rooted device, however gets harder with newer Androids
+
 ** very secure (accepting the SMS spoof risk), but also complex to integrate and setup. As a disadv. SMS costs also money.
 
 
+
 iOS:
-Store in cleartext
-Store encrypted using a symmetric key
-Using the KeyChain (assume it’s asymmetric)
-Store encrypted using asymmetric keys (SMSPKI)
+- Store in cleartext
+- Store encrypted using a symmetric key
+- Using the KeyChain (assume it’s asymmetric)
+- Store encrypted using asymmetric keys (SMSPKI)
 
 
 IMHO Balance between implementation complexity and security
 
 Android:
-KeyStore
+- KeyStore
 
 iOS:
-Keychain
+- Keychain
 
 The Android Keystore provides access to special secure hardware for storing cryptographic keys.
 The Android Keystore was significantly enhanced in Android 6.0 (API level 23) to provide more capabilities on those devices with the hardware to support them. On devices with the appropriate hardware support, keys can be generated within the secure hardware, and then used to perform cryptographic operations on user data, without the keys ever leaving the secure hardware. It is simply not possible to extract (at least through software means) the keys stored in the secure hardware.
